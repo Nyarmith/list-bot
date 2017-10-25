@@ -6,8 +6,8 @@ VOLUME /opt/list_bot/chats
 
 WORKDIR /opt/list_bot/
 
-RUN pip install telepot && pip install pexpect
+RUN pip install telepot && pip install pyyaml
 
-ADD pint_bot_docker.py .
+ADD list_bot_docker.py .
 
-CMD python3 pint_bot_docker.py
+CMD python3 list_bot_docker.py
